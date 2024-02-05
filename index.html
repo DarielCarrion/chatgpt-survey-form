@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Survey Form</title>
+    <link rel="stylesheet" href="css\styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">ChatGPT Survey Form</h1>
+        <p id="description">Help us understand how ChatGPT is used and by whom.</p>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="number" id="number-label">Age (optional):</label>
+            <input type="number" id="number" name="age" min="10" max="100" placeholder="Enter your age">
+
+            <label for="dropdown">Gender (optional):</label>
+            <select id="dropdown" name="gender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">other</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
+
+            <fieldset>
+                <legend>How often do you use ChatGPT?</legend>
+                <label><input type="radio" name="frequency" value="daily"> Daily</label>
+                <label><input type="radio" name="frequency" value="weekly"> Weekly</label>
+                <label><input type="radio" name="frequency" value="monthly"> Monthly</label>
+                <label><input type="radio" name="frequency" value="rarely"> Rarely</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What do you use ChatGPT for? (Select all that apply)</legend>
+                <label><input type="checkbox" name="usage" value="research"> Research</label>
+                <label><input type="checkbox" name="usage" value="entertainment"> Entertainment</label>
+                <label><input type="checkbox" name="usage" value="education"> Education</label>
+                <label><input type="checkbox" name="usage" value="other"> Other</label>
+            </fieldset>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Your comments"></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
